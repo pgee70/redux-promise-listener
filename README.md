@@ -78,7 +78,7 @@ Wherever you need an async function that dispatches one action and listens for o
 // someFile.js
 import { promiseListener } from './store.js'
 
-const generatedAsyncFunction = promiseListener.generateAsyncFunction(
+const generatedAsyncFunction = promiseListener.createAsyncFunction(
   'START_ACTION_TYPE', // the type of action to dispatch when this function is called
   'RESOLVE_ACTION_TYPE', // the type of action that will resolve the promise
   'REJECT_ACTION_TYPE' // the type of action that will reject the promise
